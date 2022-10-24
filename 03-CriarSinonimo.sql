@@ -1,0 +1,14 @@
+USE [BDTESTE]
+GO
+
+CREATE SYNONYM TB_ALUNO_NEW2 FOR ALUNO;
+
+SELECT * FROM ALUNO;
+SELECT * FROM TB_ALUNO_NEW;
+
+--Verificar onde fica as tabelas
+sp_help 'TB_ALUNO_NEW'
+
+FQN
+--Verificar os bancos
+SELECT * FROM [LAPTOP-BNIBHHHT].BDTESTE.dbo.Aluno;
